@@ -1,0 +1,135 @@
+/* Basic Styles for the Page */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(imagename.jpg);
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    
+}
+
+
+.title {
+    color: blue;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: bounce 1s ease-in-out infinite;  /* Apply the bounce animation */
+    position: relative;
+    bottom: 40px;
+   
+}
+
+
+
+.timer {
+    font-size: 2em;
+    color: #4caf50;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.message {
+    font-size: 1.8em;
+    color: #ff6347;
+    animation: zigzag 2s ease-in-out infinite;  /* Apply the zigzag animation */
+    
+  
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);  /* Move up */
+    }
+    100% {
+        transform: translateY(0);  /* Return to the original position */
+    }
+}
+
+@keyframes zigzag {
+    0% {
+        transform: translateX(0) translateY(0);
+    }
+    25% {
+        transform: translateX(20px) translateY(-20px);
+    }
+    50% {
+        transform: translateX(0) translateY(0);
+    }
+    75% {
+        transform: translateX(-20px) translateY(20px);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    color: #ff69b4;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;  /* Make the container take up more space on mobile */
+        padding: 15px;
+        box-sizing: border-box;
+    }
+
+    .title {
+        font-size: 2em;  /* Reduce font size for mobile */
+        margin-top: 40px;
+        position: relative;
+        bottom: 10%;
+        
+    }
+
+    .timer {
+        font-size: 1.8em;  /* Adjust the timer font size for mobile */
+        margin-bottom: 20px;
+      
+    }
+
+    .message {
+        font-size: 1em;
+        margin-top: 80%;  /* Adjust the message font size for mobile */
+    }
+
+    h2 {
+        font-size: 1.5em;  /* Adjust h2 size for mobile */
+    }
+
+    p {
+        font-size: 1em;  /* Adjust paragraph font size for mobile */
+    }
+}
+canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
