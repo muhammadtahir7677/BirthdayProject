@@ -1,5 +1,5 @@
 // Set the target date for the countdown (birthday date)
-const targetDate = new Date("2024-11-06T00:00:00").getTime();
+const targetDate = new Date("2024-12-06T00:00:00").getTime();
 
 // Function to update the timer
 function updateTimer() {
